@@ -90,30 +90,30 @@
     Button {
         label = "Button";
         bindings = <
-                &bt BT_CLR         &bootloader  &trans     &trans      &bt BT_SEL 0         &trans  &trans      &trans     &bootloader  &trans
-                &kp LGUI           &kp LALT     &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1         &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
-        &trans  &ext_power EP_TOG  &trans       &trans     &trans      &bt BT_SEL 2         &trans  &trans      &trans     &trans       &trans    &trans
-                                                &trans     &trans      &trans               &trans  &trans      &trans
+                &bt BT_CLR         &bootloader  &trans     &trans      &bt BT_SEL 0                  &trans  &trans      &trans     &bootloader  &trans
+                &kp LGUI           &kp LALT     &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1                  &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
+        &trans  &ext_power EP_TOG  &trans       &trans     &trans      &bt BT_SEL 2                  &trans  &trans      &trans     &trans       &trans    &trans
+                                                &trans     &trans      &trans                        &trans  &trans      &trans
         >;
     };
 
     Game {
         label = "Game";
         bindings = <
-                &kp TAB         &kp Z  &kp X       &kp C         &kp V            &trans  &trans  &trans  &trans  &trans
-                &kp LEFT_SHIFT  &kp Q  &kp W       &kp E         &kp R            &trans  &trans  &trans  &trans  &trans
-        &trans  &kp LCTRL       &kp A  &kp S       &kp D         &kp F            &trans  &trans  &trans  &trans  &trans  &trans
-                                       &kp LALT    &lt 9 ESCAPE  &kp SPACE        &trans  &trans  &trans
+                &kp TAB         &kp Z  &kp X       &kp C                &kp V                      &trans  &trans  &trans  &trans  &trans
+                &kp LEFT_SHIFT  &kp Q  &kp W       &kp E                &kp R                      &trans  &trans  &trans  &trans  &trans
+        &trans  &kp LCTRL       &kp A  &kp S       &kp D                &kp F                      &trans  &trans  &trans  &trans  &trans  &trans
+                                       &kp LALT    &lt Gameplus ESCAPE  &kp SPACE                  &trans  &trans  &trans
         >;
     };
 
     Gameplus {
         label = "Gameplus";
         bindings = <
-                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5        &trans  &trans  &trans  &trans  &trans
-                &kp G         &trans        &trans        &trans        &kp T               &trans  &trans  &trans  &trans  &trans
-        &trans  &kp TAB       &trans        &trans        &trans        &kp B               &trans  &trans  &trans  &trans  &trans  &trans
-                                            &kp ESCAPE    &trans        &tog 8              &trans  &trans  &trans
+                &kp N1   &kp N2  &kp N3      &kp N4  &kp N5                     &trans  &trans  &trans  &trans  &trans
+                &kp G    &trans  &trans      &trans  &kp T                      &trans  &trans  &trans  &trans  &trans
+        &trans  &kp TAB  &trans  &trans      &trans  &kp B                      &trans  &trans  &trans  &trans  &trans  &trans
+                                 &kp ESCAPE  &trans  &tog Game                  &trans  &trans  &trans
         >;
     };
   };
