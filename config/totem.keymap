@@ -110,10 +110,10 @@
     Gameplus {
         label = "Gameplus";
         bindings = <
-                &kp N1   &kp N2  &kp N3      &kp N4  &kp N5                     &trans  &trans  &trans  &trans  &trans
-                &kp G    &trans  &trans      &trans  &kp T                      &trans  &trans  &trans  &trans  &trans
-        &trans  &kp TAB  &trans  &trans      &trans  &kp B                      &trans  &trans  &trans  &trans  &trans  &trans
-                                 &kp ESCAPE  &trans  &tog Game                  &trans  &trans  &trans
+                   &kp N1   &kp N2  &kp N3      &kp N4  &kp N5                     &trans  &trans  &trans  &trans  &trans
+                   &kp G    &trans  &trans      &trans  &kp T                      &trans  &trans  &trans  &trans  &trans
+        &kp SLASH  &kp TAB  &trans  &trans      &trans  &kp B                      &trans  &trans  &trans  &trans  &trans  &trans
+                                    &kp ESCAPE  &trans  &tog Game                  &trans  &trans  &trans
         >;
     };
   };
