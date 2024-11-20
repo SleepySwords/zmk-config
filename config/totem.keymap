@@ -58,7 +58,7 @@
         combo_setting {
             timeout-ms = <50>;
             key-positions = <33 36>;
-            bindings = <&lt Setting TAB>;
+            bindings = <&mt Setting>;
         };
     };
 
@@ -104,10 +104,10 @@
     Setting {
         label = "Setting";
         bindings = <
-                &bt BT_CLR         &bootloader  &trans     &trans      &bt BT_SEL 0                  &trans  &trans      &trans     &bootloader  &trans
-                &kp LGUI           &kp LALT     &kp LCTRL  &kp LSHIFT  &bt BT_SEL 1                  &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
-        &trans  &ext_power EP_TOG  &trans       &trans     &trans      &bt BT_SEL 2                  &trans  &trans      &trans     &trans       &trans    &trans
-                                                &trans     &trans      &trans                        &trans  &trans      &trans
+                &bt BT_CLR         &bootloader  &trans     &trans          &bt BT_SEL 0                  &trans  &trans      &trans     &bootloader  &trans
+                &kp LGUI           &kp LALT     &kp LCTRL  &kp LSHIFT      &bt BT_SEL 1                  &trans  &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
+        &trans  &ext_power EP_TOG  &trans       &trans     &trans          &bt BT_SEL 2                  &trans  &trans      &trans     &trans       &trans    &trans
+                                                &to Game   &studio_unlock  &trans                        &trans  &trans      &trans
         >;
     };
 
