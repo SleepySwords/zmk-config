@@ -53,14 +53,14 @@
         // };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_setting {
-            timeout-ms = <50>;
-            key-positions = <33 36>;
-            bindings = <&mo Setting>;
-        };
-    };
+    // combos {
+    //     compatible = "zmk,combos";
+    //     combo_setting {
+    //         timeout-ms = <50>;
+    //         key-positions = <33 36>;
+    //         bindings = <&mo Setting>;
+    //     };
+    // };
 
     //               0   1   2   3   4                   5   6   7   8   9
     //               10  11  12  13  14                  15  16  17  18  19
@@ -83,10 +83,10 @@
     Sym {
         label = "Sym";
         bindings = <
-                   &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                  &kp CARET  &kp AMPS  &kp STAR  &kp BSLH  &kp GRAVE
-                   &kp EQUAL  &kp LBKT  &kp LBRC  &kp LPAR  &kp LT                     &kp GT     &kp RPAR  &kp RBRC  &kp RBRC  &kp LALT
-        &kp MINUS  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5                     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0     &kp LGUI
-                                        &kp LGUI  &trans    &kp LALT                   &kp LSHFT  &kp BSPC  &kp LCTRL
+                   &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                  &kp CARET  &kp AMPS          &kp STAR  &kp BSLH  &kp GRAVE
+                   &kp EQUAL  &kp LBKT  &kp LBRC  &kp LPAR  &kp LT                     &kp GT     &kp RPAR          &kp RBRC  &kp RBRC  &kp LALT
+        &kp MINUS  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5                     &kp N6     &kp N7            &kp N8    &kp N9    &kp N0     &kp LGUI
+                                        &kp LGUI  &trans    &kp LALT                   &kp LSHFT  &lt Setting BSPC  &kp LCTRL
         >;
         //                                                                                        ^ Might have to change this based on how combos work
     };
@@ -94,10 +94,10 @@
     Nav {
         label = "Nav";
         bindings = <
-                &kp F1        &kp F2    &kp F3                 &kp F4      &kp F5                            &kp F6    &kp F7         &kp F7       &kp F8     &kp F9
-                &kp LEFT_GUI  &kp LALT  &kp LCTRL              &kp LSHIFT  &kp LS(LA(SEMI))                  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
-        &trans  &kp F10       &kp F11   &kp F12                &kp PSCRN   &trans                            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INSERT  &trans
-                                        &kp LS(LA(LG(LCTRL)))  &trans      &trans                            &kp BSPC  &trans         &kp ENTER
+                &kp F1        &kp F2    &kp F3                 &kp F4       &kp F5                            &kp F6    &kp F7         &kp F7       &kp F8     &kp F9
+                &kp LEFT_GUI  &kp LALT  &kp LCTRL              &kp LSHIFT   &kp LS(LA(SEMI))                  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+        &trans  &kp F10       &kp F11   &kp F12                &kp PSCRN    &trans                            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INSERT  &trans
+                                        &kp LS(LA(LG(LCTRL)))  &mo Setting  &trans                            &kp BSPC  &trans         &kp ENTER
         >;
         //                              ^ Hyper-key
     };
