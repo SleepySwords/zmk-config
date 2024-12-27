@@ -84,7 +84,7 @@
         label = "Sym";
         bindings = <
                    &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                  &kp CARET         &kp AMPS   &kp STAR  &kp BSLH  &kp GRAVE
-                   &kp EQUAL  &kp LBKT  &kp LBRC  &kp LPAR  &kp LT                     &kp GT            &kp RPAR   &kp RBRC  &kp RBRC  &kp LALT
+                   &kp EQUAL  &kp LBKT  &kp LBRC  &kp LPAR  &kp LT                     &kp GT            &kp RPAR   &kp RBRC  &kp RBKT  &kp LALT
         &kp MINUS  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5                     &kp N6            &kp N7     &kp N8    &kp N9    &kp N0     &kp LGUI
                                         &trans    &trans    &trans                     &lt Setting BSPC  &kp LSHFT  &kp LCTRL
         >;
