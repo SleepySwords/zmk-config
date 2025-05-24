@@ -19,12 +19,12 @@
 #define Base            0
 #define Sym             1
 #define Nav             2
-#define Setting         3
-#define Game            4
-#define Gameplus        5
-#define Mouse           6
-#define LMods           7
-#define RMods           8
+#define LMods           3
+#define RMods           4
+#define Setting         5
+#define Game            6
+#define Gameplus        7
+#define Mouse           8
 
 &mt {
     quick-tap-ms = <100>;
