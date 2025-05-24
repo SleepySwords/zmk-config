@@ -128,7 +128,7 @@
         label = "Setting";
         bindings = <
                 &bt BT_CLR         &bootloader  &trans     &trans          &bt BT_SEL 0                  &trans  &trans      &trans    &bootloader  &trans
-                &kp LCTRL          &kp LALT     &kp LGUI   &kp LSHIFT      &bt BT_SEL 1                  &trans  &kp RSHIFT  &kp RGUI  &kp RCTRL    &kp RALT
+                &kp LCTRL          &kp LALT     &kp LGUI   &kp LSHIFT      &bt BT_SEL 1                  &trans  &kp RSHIFT  &kp RGUI  &kp RALT     &kp RCTRL
         &trans  &ext_power EP_TOG  &trans       &to Game   &studio_unlock  &bt BT_SEL 2                  &trans  &trans      &trans    &trans       &trans    &trans
                                                 &trans     &trans          &trans                        &trans  &trans      &trans
         >;
