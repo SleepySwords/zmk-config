@@ -104,13 +104,33 @@
         //                           ^ Hyper-key            ^ Can be a mouse/resize or something
     };
 
+    LMods {
+        label = "LMods";
+        bindings = <
+                  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans
+                  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans                    &trans  &trans  &trans  &trans  &trans
+          &trans  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans    &trans      &trans                    &trans  &trans  &trans
+        >;
+    };
+
+    RMods {
+        label = "RMods";
+        bindings = <
+                  &trans  &trans  &trans  &trans  &trans                    &trans  &trans      &trans    &trans     &trans
+                  &trans  &trans  &trans  &trans  &trans                    &trans  &kp RSHIFT  &kp RGUI  &kp RCTRL  &kp RALT  &kp RSHIFT
+          &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans      &trans    &trans     &trans      &trans
+                                  &trans  &trans  &trans                    &trans  &trans      &trans
+        >;
+    };
+
     Setting {
         label = "Setting";
         bindings = <
-                &bt BT_CLR         &bootloader  &trans     &trans          &bt BT_SEL 0                  &trans  &trans    &trans     &bootloader  &trans
-                &kp LCTRL          &kp LALT     &kp LGUI   &kp LSHIFT      &bt BT_SEL 1                  &trans  &kp RGUI  &kp RCTRL  &kp RALT     &kp RSHIFT
-        &trans  &ext_power EP_TOG  &trans       &to Game   &studio_unlock  &bt BT_SEL 2                  &trans  &trans    &trans     &trans       &trans      &trans
-                                                &trans     &trans          &trans                        &trans  &trans    &trans
+                &bt BT_CLR         &bootloader  &trans     &trans          &bt BT_SEL 0                  &trans  &trans      &trans    &bootloader  &trans
+                &kp LCTRL          &kp LALT     &kp LGUI   &kp LSHIFT      &bt BT_SEL 1                  &trans  &kp RSHIFT  &kp RGUI  &kp RCTRL    &kp RALT
+        &trans  &ext_power EP_TOG  &trans       &to Game   &studio_unlock  &bt BT_SEL 2                  &trans  &trans      &trans    &trans       &trans    &trans
+                                                &trans     &trans          &trans                        &trans  &trans      &trans
         >;
     };
 
@@ -140,27 +160,7 @@
                   &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_X(-600)  &mmv MOVE_Y(600)  &mmv MOVE_Y(-600)  &mmv MOVE_X(600)  &trans
                   &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &trans
           &trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &trans  &trans
-                                  &trans  &trans  &trans                    &mkp MCLK       &mkp LCLK       &mkp RCLK     
-        >;
-    };
-
-    LMods {
-        label = "LMods";
-        bindings = <
-                  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans
-                  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans                    &trans  &trans  &trans  &trans  &trans
-          &trans  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                                       &trans    &trans      &trans                    &trans  &trans  &trans
-        >;
-    };
-
-    RMods {
-        label = "RMods";
-        bindings = <
-                  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans    &trans
-                  &trans  &trans  &trans  &trans  &trans                    &trans  &kp RGUI  &kp RCTRL  &kp RALT  &kp RSHIFT
-          &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans    &trans      &trans
-                                  &trans  &trans  &trans                    &trans  &trans    &trans
+                                  &trans  &trans  &trans                    &mkp MCLK          &mkp LCLK         &mkp RCLK
         >;
     };
 
