@@ -19,12 +19,12 @@
 #define Base            0
 #define Sym             1
 #define Nav             2
-#define LMods           3
-#define RMods           4
-#define Setting         5
-#define Game            6
-#define Gameplus        7
-#define Mouse           8
+#define Setting         3
+#define Game            4
+#define Gameplus        5
+#define Mouse           6
+#define LMods           7
+#define RMods           8
 
 &mt {
     quick-tap-ms = <100>;
@@ -104,26 +104,6 @@
         //                           ^ Hyper-key            ^ Can be a mouse/resize or something
     };
 
-    RMods {
-        label = "RMods";
-        bindings = <
-                  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans    &trans
-                  &trans  &trans  &trans  &trans  &trans                    &trans  &kp RGUI  &kp RCTRL  &kp RALT  &kp RSHIFT
-          &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans    &trans      &trans
-                                  &trans  &trans  &trans                    &trans  &trans    &trans
-        >;
-    };
-
-    LMods {
-        label = "LMods";
-        bindings = <
-                  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans
-                  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans                    &trans  &trans  &trans  &trans  &trans
-          &trans  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                                       &trans    &trans      &trans                    &trans  &trans  &trans
-        >;
-    };
-
     Setting {
         label = "Setting";
         bindings = <
@@ -161,6 +141,26 @@
                   &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &trans
           &trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &trans  &trans
                                   &trans  &trans  &trans                    &mkp MCLK       &mkp LCLK       &mkp RCLK     
+        >;
+    };
+
+    LMods {
+        label = "LMods";
+        bindings = <
+                  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans
+                  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans                    &trans  &trans  &trans  &trans  &trans
+          &trans  &trans     &trans    &trans    &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans    &trans      &trans                    &trans  &trans  &trans
+        >;
+    };
+
+    RMods {
+        label = "RMods";
+        bindings = <
+                  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans    &trans
+                  &trans  &trans  &trans  &trans  &trans                    &trans  &kp RGUI  &kp RCTRL  &kp RALT  &kp RSHIFT
+          &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans     &trans    &trans      &trans
+                                  &trans  &trans  &trans                    &trans  &trans    &trans
         >;
     };
 
