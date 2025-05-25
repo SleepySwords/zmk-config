@@ -107,7 +107,7 @@
         label = "LMods";
         bindings = <
                   &trans     &trans    &trans    &trans      &trans                    &trans  &trans      &trans    &trans     &trans
-                  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans                    &trans  &kp RSHIFT  &kp RGUI  &kp RCTRL  &kp RALT  &kp RSHIFT
+                  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans                    &trans  &kp RSHIFT  &kp RGUI  &kp RALT   &kp RCTRL
           &trans  &trans     &trans    &trans    &trans      &trans                    &trans  &trans      &trans    &trans     &trans      &trans
                                        &trans    &trans      &trans                    &trans  &trans      &trans
         >;
