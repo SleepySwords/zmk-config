@@ -98,7 +98,7 @@
                 &kp F1     &kp F2     &kp F3                 &kp F4       &kp F5                            &kp F6       &kp F7    &kp F7   &kp F8     &kp F9
                 &kp LCTRL  &kp LALT   &kp LEFT_GUI           &kp LSHIFT   &mo Mouse                         &kp LEFT     &kp DOWN  &kp UP   &kp RIGHT  &trans
         &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)              &kp LG(C)    &kp LS(LA(SEMI))                  &kp F10      &kp F11   &kp F12  &trans     &trans  &kp BSPC
-                                      &kp ls(la(lg(lctrl)))  &trans       &mo Setting                       &mo Setting  &trans    &trans
+                                      &kp LS(LA(LG(LCTRL)))  &trans       &mo Setting                       &mo Setting  &trans    &trans
         >;
         //                           ^ Hyper-key            ^ Can be a mouse/resize or something
     };
