@@ -160,7 +160,7 @@
                  &kp Q  &kp W  &kp E  &kp R  &kp T                    &kp U  &kp I  &none     &none  &none   &none
                  &kp A  &kp S  &kp D  &kp F  &kp G                    &kp J  &kp K  &kp O     &kp P          &none
           &none  &none  &none  &none  &none  &none                    &none  &none  &kp L     &kp SEMICOLON  &none
-                               &none  &kp c  &kp v                    &kp n  &kp m  &to Base
+                               &none  &kp C  &kp V                    &kp N  &kp M  &to Base
         >;
     };
 
