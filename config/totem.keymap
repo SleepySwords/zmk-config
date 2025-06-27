@@ -61,7 +61,7 @@
         combo_setting {
             timeout-ms = <100>;
             key-positions = <32 37>;
-            bindings = <&mt Mods>;
+            bindings = <&sl Mods>;
         };
     };
 
