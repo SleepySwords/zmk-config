@@ -34,9 +34,10 @@
 };
 
 &lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <100>;
+    global-quick-tap;
+    flavor = "tap-preferred";
+    tapping-term-ms = <170>;
 };
 
 / {
@@ -60,10 +61,10 @@
     Base {
         label = "Base";
         bindings = <
-                 &kp Q  &kp W  &kp E          &kp R      &kp T                          &kp Y    &kp U     &kp I               &kp O    &kp P
-                 &kp A  &kp S  &kp D          &kp F      &kp G                          &kp H    &kp J     &kp K               &kp L    &kp SEMICOLON
-        &kp ESC  &kp Z  &kp X  &kp C          &kp V      &kp B                          &kp N    &kp M     &kp COMMA           &kp DOT  &kp SLASH      &kp SQT
-                               &mt LCTRL TAB  &kp SPACE  &mt LSHIFT ENTER               &sl Sym  &kp BSPC  &sl Mods
+                 &kp Q  &kp W  &kp E          &kp R      &kp T                           &kp Y          &kp U     &kp I               &kp O    &kp P
+                 &kp A  &kp S  &kp D          &kp F      &kp G                           &kp H          &kp J     &kp K               &kp L    &kp SEMICOLON
+        &kp ESC  &kp Z  &kp X  &kp C          &kp V      &kp B                           &kp N          &kp M     &kp COMMA           &kp DOT  &kp SLASH      &kp SQT
+                               &mt LCTRL TAB  &kp SPACE  &mt LSHIFT kp LS(LA(SEMI))      &lt Sym ENTER  &kp BSPC  &sl Mods
         >;
     };
 
@@ -91,10 +92,10 @@
     Mods {
         label = "Mods";
         bindings = <
-                  &trans     &trans    &trans        &trans       &trans                     &trans    &sk RSHIFT  &sk RGUI  &sk RALT   &sk RCTRL
-                  &sk LCTRL  &sk LALT  &sk LGUI      &sk LSHIFT   &trans                     &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT  &trans
-          &trans  &trans     &trans    &trans        &trans       &trans                     &trans  &trans      &trans    &trans     &trans      &trans
-                                       &sl LEFT_GUI  &mo Setting  &sl Nav                    &trans  &trans      &trans
+                  &trans     &trans    &trans        &trans       &trans                          &trans    &sk RSHIFT  &sk RGUI  &sk RALT   &sk RCTRL
+                  &sk LCTRL  &sk LALT  &sk LGUI      &sk LSHIFT   &trans                          &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT  &trans
+          &trans  &trans     &trans    &trans        &trans       &kp LS(LA(SEMI))                &trans    &trans      &trans    &trans     &trans      &trans
+                                       &sl LEFT_GUI  &mo Setting  &sl Nav                         &none     &none       &none
         >;
     };
 
