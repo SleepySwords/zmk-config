@@ -19,7 +19,7 @@
 #define Base            0
 #define Sym             1
 #define Nav             2
-#define Mods            3
+#define Nums            3
 #define Setting         4
 #define Game            5
 #define Gameplus        6
@@ -46,7 +46,15 @@
         combo_setting {
             timeout-ms = <100>;
             key-positions = <32 37>;
-            bindings = <&sl Mods>;
+            bindings = <&sl Nums>;
+        };
+    };
+    behaviors {
+        td_mt: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sl Nums>, <&kp LEFT_GUI>;
         };
     };
 
@@ -64,18 +72,17 @@
                  &kp Q  &kp W  &kp E          &kp R      &kp T                           &kp Y          &kp U     &kp I               &kp O    &kp P
                  &kp A  &kp S  &kp D          &kp F      &kp G                           &kp H          &kp J     &kp K               &kp L    &kp SEMICOLON
         &kp ESC  &kp Z  &kp X  &kp C          &kp V      &kp B                           &kp N          &kp M     &kp COMMA           &kp DOT  &kp SLASH      &kp SQT
-                               &mt LCTRL TAB  &kp SPACE  &mt LSHIFT LS(LA(SEMI))         &lt Sym ENTER  &kp BSPC  &sl Mods
+                               &mt LCTRL TAB  &kp SPACE  &mt LSHIFT LS(LA(SEMI))         &lt Sym ENTER  &kp BSPC  &sl Nums
         >;
     };
 
     Sym {
         label = "Sym";
         bindings = <
-                   &kp EXCL  &kp AT    &kp HASH      &kp DLLR  &kp PRCNT                  &kp CARET  &kp AMPS   &kp STAR  &kp BSLH  &kp GRAVE
-                   &kp LT    &kp LBKT  &kp LBRC      &kp LPAR  &kp MINUS                  &kp EQUAL  &kp RPAR   &kp RBRC  &kp RBKT  &kp GT
-        &kp GRAVE  &kp N1    &kp N2    &kp N3        &kp N4    &kp N5                     &kp N6     &kp N7     &kp N8    &kp N9    &kp N0     &kp BSLH
-                                       &kp LEFT_GUI  &trans    &trans                     &none      &none      &none
-        >;
+                   &kp EXCL  &kp AT    &kp HASH       &kp DLLR   &kp PRCNT                  &kp CARET      &kp AMPS      &kp STAR  &kp BSLH  &kp GRAVE
+                   &kp LT    &kp LBKT  &kp LBRC       &kp LPAR   &kp MINUS                  &kp EQUAL      &kp RPAR      &kp RBRC  &kp RBKT  &kp GT
+        &kp GRAVE  &trans    &trans    &kp LS(GRAVE)  &kp GRAVE  &kp LS(MINUS)              &kp LS(EQUAL)  &kp LS(BSLH)  &kp BSLH    &trans    &trans     &kp BSLH
+                                       &kp LEFT_GUI   &trans     &trans                     &none          &none         &none
     };
 
     Nav {
@@ -88,8 +95,8 @@
         >;
     };
 
-    Mods {
-        label = "Mods";
+    Nums {
+        label = "Nums";
         bindings = <
                 &trans     &trans     &trans        &trans       &trans                &trans    &sk RSHIFT  &sk RGUI  &sk RALT   &sk RCTRL
                 &sk LCTRL  &sk LALT   &sk LGUI      &sk LSHIFT   &trans                &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT  &trans
